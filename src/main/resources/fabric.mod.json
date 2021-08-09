@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "fastopenlinksandfolders",
+  "version": "${version}",
+
+  "name": "FastOpenResourcePacks",
+  "description": "A lightweight mod to make the game not block when opening a chat link, a screenshot or the resourcepacks or datapacks folder",
+  "authors": [
+    "altrisi"
+  ],
+  "contact": {
+    "homepage": "https://github.com/altrisi/FastOpenLinksAndFolders",
+    "sources": "https://github.com/altrisi/FastOpenLinksAndFolders",
+    "issues": "https://github.com/altrisi/FastOpenLinksAndFolders/issues"
+  },
+
+  "license": "LGPL-3.0-only",
+  "icon": "assets/fastopenlinksandfolders/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+  },
+  "mixins": [
+    "fastopenlinksandfolders.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4"
+  }
+}

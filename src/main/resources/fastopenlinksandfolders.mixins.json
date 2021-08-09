@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "altrisi.mods.fastopenresourcepacks.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "OperatingSystemMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
