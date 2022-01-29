@@ -6,8 +6,6 @@ import java.net.URI;
 import java.net.URL;
 import java.util.concurrent.CompletableFuture;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
@@ -19,9 +17,6 @@ abstract class OperatingSystemMixin {
 	@Shadow
 	public abstract void open(URL url);
 	
-	// Get vanilla logger
-	private static final Logger LOGGER = LogManager.getLogger(Util.class);
-	
 	/**
 	 * @author altrisi
 	 * @reason Make opening screenshots and chat links non-blocking 
@@ -32,7 +27,8 @@ abstract class OperatingSystemMixin {
 			try {
 				this.open(uri.toURL());
 			} catch (MalformedURLException e) {
-        	 	LOGGER.error("Couldn't open uri '{}'", uri, e);
+        		System.err.println("Couldn't open uri '" + uri + "'");
+        		e.printStackTrace();
          	}
 		});
 	}
@@ -47,7 +43,8 @@ abstract class OperatingSystemMixin {
 			try {
 				this.open(file.toURI().toURL());
 			} catch (MalformedURLException e) {
-        	 	LOGGER.error("Couldn't open file '{}'", file, e);
+        		System.err.println("Couldn't open file '" + file + "'");
+        		e.printStackTrace();
          	}
 		});
 	}
