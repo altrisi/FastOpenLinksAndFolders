@@ -15,7 +15,7 @@
   },
 
   "license": "LGPL-3.0-only",
-  "icon": "assets/fastopenlinksandfolders/icon.png",
+  "icon": "fastopenlinksandfolders-icon.png",
 
   "environment": "client",
   "entrypoints": {
