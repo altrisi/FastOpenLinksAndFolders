@@ -3,12 +3,7 @@
   "minVersion": "0.8",
   "package": "altrisi.mods.fastopenresourcepacks.mixin",
   "compatibilityLevel": "JAVA_8",
-  "mixins": [
-  ],
   "client": [
     "OS"
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  }
+  ]
 }
