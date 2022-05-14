@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import net.minecraft.util.Util;
 
 @Mixin(Util.OperatingSystem.class)
-abstract class OperatingSystemMixin {
+abstract class OS {
 	@Shadow
 	public abstract void open(URL url);
 	

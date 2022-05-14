@@ -15,7 +15,7 @@
   },
 
   "license": "LGPL-3.0-only",
-  "icon": "fastopenlinksandfolders-icon.png",
+  "icon": "folaf-icon.png",
 
   "environment": "client",
   "entrypoints": {
