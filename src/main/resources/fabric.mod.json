@@ -18,8 +18,6 @@
   "icon": "folaf-icon.png",
 
   "environment": "client",
-  "entrypoints": {
-  },
   "mixins": [
     "fastopenlinksandfolders.mixins.json"
   ],
